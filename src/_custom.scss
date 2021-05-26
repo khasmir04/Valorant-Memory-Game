@@ -2,6 +2,10 @@ body {
   font-family: "VALORANT", sans-serif;
   color: white;
   background: #042e27;
+  background-image: url(../public/assets/img/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -15,6 +19,16 @@ section {
 .deck-container {
   max-width: 600px;
   width: 100%;
+}
+
+//Omen gif
+.omen-gif {
+  position: absolute;
+  max-width: 175px;
+  width: 100%;
+  top: 100px;
+  right: -215px;
+  z-index: -1;
 }
 /*
    * Styles for the deck of cards

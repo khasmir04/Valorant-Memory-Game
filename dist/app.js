@@ -3146,12 +3146,11 @@ var modal = document.getElementById("popup1"); // declare restart
 
 var restart = document.getElementById("restart"); // declare play again button
 
-var play = document.getElementById("play-again");
-console.log(play); // array for opened cards
+var play = document.getElementById("play-again"); // array for opened cards
 
-var openedCards = []; // background musci
+var openedCards = []; // background music
 
-var bgAudio = new Audio('../public/assets/bgm/valorant-bgm.mp3'); // @description shuffles cards
+var bgAudio = new Audio(src = '../public/assets/bgm/valorant-bgm.mp3', muted = true, loop = true); // @description shuffles cards
 // @param {array}
 // @returns shuffledarray
 
@@ -3216,6 +3215,8 @@ var displayCard = function displayCard() {
 
 
 function cardOpen() {
+  var clickAudio = new Audio(src = "../public/assets/sfx/sheriff.mp3", volume = 1);
+  clickAudio.play();
   openedCards.push(this);
   var len = openedCards.length;
 
@@ -3230,9 +3231,19 @@ function cardOpen() {
   }
 }
 
-; // @description when cards match
+; // @description Good Work SFX
+
+var playGoodWork = function playGoodWork() {
+  var trackNo = Math.floor(Math.random() * 3) + 1;
+  var goodAudio = new Audio(src = '../public/assets/sfx/jett-good' + trackNo + '.mp3', muted = true);
+  goodAudio.volume = 0.5;
+  console.log(goodAudio);
+  goodAudio.play();
+}; // @description when cards match
+
 
 function matched() {
+  playGoodWork();
   openedCards[0].classList.add("match", "disabled");
   openedCards[1].classList.add("match", "disabled");
   openedCards[0].classList.remove("show", "open", "no-event");
@@ -3378,9 +3389,7 @@ cards.forEach(function (card) {
 restart.addEventListener('click', startGame, false); // @description Play BGM
 
 var playBGM = function playBGM() {
-  bgAudio.muted;
-  bgAudio.loop;
-  bgAudio.volume = '0.4';
+  bgAudio.volume = '0.2';
   bgAudio.play();
 };
 

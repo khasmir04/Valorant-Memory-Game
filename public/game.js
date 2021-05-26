@@ -29,14 +29,16 @@ let restart = document.getElementById("restart")
 
 // declare play again button
 let play = document.getElementById("play-again")
-console.log(play)
 
 // array for opened cards
 var openedCards = [];
 
-// background musci
-var bgAudio = new Audio('../public/assets/bgm/valorant-bgm.mp3')
-
+// background music
+let bgAudio = new Audio(
+    src = '../public/assets/bgm/valorant-bgm.mp3',
+    muted = true,
+    loop = true
+)
 
 // @description shuffles cards
 // @param {array}
@@ -103,6 +105,11 @@ var displayCard = function (){
 
 // @description add opened cards to OpenedCards list and check if cards are match or not
 function cardOpen() {
+    let clickAudio = new Audio(
+        src = "../public/assets/sfx/sheriff.mp3",
+        volume = 1
+    );
+    clickAudio.play()
     openedCards.push(this);
     var len = openedCards.length;
     if(len === 2){
@@ -116,8 +123,21 @@ function cardOpen() {
 };
 
 
+// @description Good Work SFX
+var playGoodWork = () =>{
+    let trackNo = Math.floor(Math.random() * 3)+1
+    let goodAudio = new Audio(
+        src = '../public/assets/sfx/jett-good'+trackNo+'.mp3',
+        muted = true,
+    )
+    goodAudio.volume = 0.5
+    console.log(goodAudio)
+    goodAudio.play()
+}
+
 // @description when cards match
 function matched(){
+    playGoodWork()
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
     openedCards[0].classList.remove("show", "open", "no-event");
@@ -187,7 +207,6 @@ function moveCounter(){
     }
 }
 
-
 // @description game timer
 var second = 0, minute = 0; hour = 0;
 var timer = document.querySelector(".timer");
@@ -231,7 +250,6 @@ function congratulations(){
     };
 }
 
-
 // @description close icon on modal
 function closeModal(){
     closeicon.addEventListener("click", function(e){
@@ -239,7 +257,6 @@ function closeModal(){
         startGame();
     });
 }
-
 
 // @desciption for user to play Again 
 // function playAgain(){
@@ -273,13 +290,13 @@ cards.forEach(function(card){
 restart.addEventListener('click',startGame,false);
 
 // @description Play BGM
-
 var playBGM = () => {
-    bgAudio.muted
-    bgAudio.loop
-    bgAudio.volume = '0.4'
+    bgAudio.volume = '0.2'
     bgAudio.play()
 }
 
 document.body.addEventListener("mousemove",playBGM)
+
+
+
 // merging functions

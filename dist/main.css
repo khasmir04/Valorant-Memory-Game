@@ -8895,6 +8895,10 @@ body {
   font-family: "VALORANT", sans-serif;
   color: white;
   background: #042e27;
+  background-image: url(/images/background.jpg?f15c7af8e24fdb293f0f5697a48e1a9c);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -8908,6 +8912,15 @@ section {
 .deck-container {
   max-width: 600px;
   width: 100%;
+}
+
+.omen-gif {
+  position: absolute;
+  max-width: 175px;
+  width: 100%;
+  top: 100px;
+  right: -215px;
+  z-index: -1;
 }
 
 /*
