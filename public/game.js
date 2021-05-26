@@ -127,10 +127,10 @@ function cardOpen() {
 var playGoodWork = () =>{
     let trackNo = Math.floor(Math.random() * 3)+1
     let goodAudio = new Audio(
-        src = '../public/assets/sfx/jett-good'+trackNo+'.mp3',
+        src = '../public/assets/sfx/good'+trackNo+'.mp3',
         muted = true,
     )
-    goodAudio.volume = 0.5
+    goodAudio.volume = 0.4
     console.log(goodAudio)
     goodAudio.play()
 }
