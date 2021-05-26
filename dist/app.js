@@ -3373,9 +3373,14 @@ cards.forEach(function (card) {
 
 restart.addEventListener('click', startGame, false); // @description Play BGM
 
-bgAudio.muted();
-bgAudio.volume = '0.4';
-bgAudio.play(); // merging functions
+var playBGM = function playBGM() {
+  bgAudio.muted;
+  bgAudio.loop;
+  bgAudio.volume = '0.4';
+  bgAudio.play();
+};
+
+document.body.addEventListener("mousemove", playBGM); // merging functions
 
 /***/ }),
 

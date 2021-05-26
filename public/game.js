@@ -32,6 +32,7 @@ var openedCards = [];
 // background musci
 var bgAudio = new Audio('../public/assets/bgm/valorant-bgm.mp3')
 
+
 // @description shuffles cards
 // @param {array}
 // @returns shuffledarray
@@ -56,7 +57,6 @@ document.body.onload = startGame();
 
 // @description function to start a new play 
 function startGame(){
-
     // empty the openCards array
     openedCards = [];
 
@@ -266,9 +266,13 @@ cards.forEach(function(card){
 restart.addEventListener('click',startGame,false);
 
 // @description Play BGM
-bgAudio.muted()
-bgAudio.volume = '0.4'
-bgAudio.play()
 
+var playBGM = () => {
+    bgAudio.muted
+    bgAudio.loop
+    bgAudio.volume = '0.4'
+    bgAudio.play()
+}
 
+document.body.addEventListener("mousemove",playBGM)
 // merging functions
