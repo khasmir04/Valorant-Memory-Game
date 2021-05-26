@@ -1,6 +1,7 @@
 // cards array holds all cards
 let card = document.getElementsByClassName("card");
 let cards = [...card];
+
 // deck of all cards in game
 const deck = document.getElementById("card-deck");
 
@@ -23,8 +24,12 @@ let closeicon = document.querySelector(".close");
 // declare modal
 let modal = document.getElementById("popup1")
 
-// decalre restart
+// declare restart
 let restart = document.getElementById("restart")
+
+// declare play again button
+let play = document.getElementById("play-again")
+console.log(play)
 
 // array for opened cards
 var openedCards = [];
@@ -246,6 +251,8 @@ const playAgain = () => {
     modal.classList.remove("show");
     startGame();
 }
+
+play.addEventListener("click", playAgain)
 
 // loop to add event listeners to each card
 // for (var i = 0; i < cards.length; i++){

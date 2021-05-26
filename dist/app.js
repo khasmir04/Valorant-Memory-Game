@@ -3142,9 +3142,12 @@ var starsList = document.querySelectorAll(".stars li"); // close icon in modal
 
 var closeicon = document.querySelector(".close"); // declare modal
 
-var modal = document.getElementById("popup1"); // decalre restart
+var modal = document.getElementById("popup1"); // declare restart
 
-var restart = document.getElementById("restart"); // array for opened cards
+var restart = document.getElementById("restart"); // declare play again button
+
+var play = document.getElementById("play-again");
+console.log(play); // array for opened cards
 
 var openedCards = []; // background musci
 
@@ -3356,14 +3359,15 @@ function closeModal() {
 var playAgain = function playAgain() {
   modal.classList.remove("show");
   startGame();
-}; // loop to add event listeners to each card
+};
+
+play.addEventListener("click", playAgain); // loop to add event listeners to each card
 // for (var i = 0; i < cards.length; i++){
 //     card = cards[i];
 //     card.addEventListener("click", displayCard);
 //     card.addEventListener("click", cardOpen);
 //     card.addEventListener("click", congratulations);
 // };
-
 
 cards.forEach(function (card) {
   card.addEventListener("click", displayCard);
