@@ -131,7 +131,6 @@ var playGoodWork = () =>{
         muted = true,
     )
     goodAudio.volume = 0.4
-    console.log(goodAudio)
     goodAudio.play()
 }
 

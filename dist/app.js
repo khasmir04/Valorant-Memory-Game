@@ -3237,7 +3237,6 @@ var playGoodWork = function playGoodWork() {
   var trackNo = Math.floor(Math.random() * 3) + 1;
   var goodAudio = new Audio(src = '../public/assets/sfx/good' + trackNo + '.mp3', muted = true);
   goodAudio.volume = 0.4;
-  console.log(goodAudio);
   goodAudio.play();
 }; // @description when cards match
 
