@@ -3148,9 +3148,7 @@ var restart = document.getElementById("restart"); // array for opened cards
 
 var openedCards = []; // background musci
 
-var bgAudio = new Audio('../public/assets/bgm/valorant-bgm.mp3');
-bgAudio.volume = '0.4';
-bgAudio.play(); // @description shuffles cards
+var bgAudio = new Audio('../public/assets/bgm/valorant-bgm.mp3'); // @description shuffles cards
 // @param {array}
 // @returns shuffledarray
 
@@ -3373,7 +3371,11 @@ cards.forEach(function (card) {
   card.addEventListener("click", congratulations);
 }); // @description Player restarts game
 
-restart.addEventListener('click', startGame, false); // merging functions
+restart.addEventListener('click', startGame, false); // @description Play BGM
+
+bgAudio.muted();
+bgAudio.volume = '0.4';
+bgAudio.play(); // merging functions
 
 /***/ }),
 
