@@ -290,11 +290,14 @@ restart.addEventListener('click',startGame,false);
 
 // @description Play BGM
 var playBGM = () => {
-    bgAudio.volume = '0.2'
-    bgAudio.play()
+    if(bgAudio.paused){
+        bgAudio.volume = '0.2'
+        bgAudio.play()
+    }
+        
 }
 
-document.body.addEventListener("mousemove",playBGM)
+document.body.addEventListener("click",playBGM)
 
 
 

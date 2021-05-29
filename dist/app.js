@@ -3388,11 +3388,13 @@ cards.forEach(function (card) {
 restart.addEventListener('click', startGame, false); // @description Play BGM
 
 var playBGM = function playBGM() {
-  bgAudio.volume = '0.2';
-  bgAudio.play();
+  if (bgAudio.paused) {
+    bgAudio.volume = '0.2';
+    bgAudio.play();
+  }
 };
 
-document.body.addEventListener("mousemove", playBGM); // merging functions
+document.body.addEventListener("click", playBGM); // merging functions
 
 /***/ }),
 
