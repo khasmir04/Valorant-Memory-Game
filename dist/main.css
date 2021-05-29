@@ -9087,6 +9087,14 @@ section {
   color: #ffffff;
 }
 
+.no-select {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 /* animations */
 @-webkit-keyframes flipInY {
   from {
