@@ -27,7 +27,9 @@
 <p align="center">
 <h3 align="center">Trophies</h3>
 
-![trophy](https://github-profile-trophy.vercel.app/?username=khasmir04&theme=onedark&title=Joined2020,Commit,Stars,Followers,Repositories)
+<p align="center">
+    <img align="center" src="https://github-profile-trophy.vercel.app/?username=khasmir04&theme=onedark&title=Joined2020,Commit,Stars,Followers,Repositories" alt="Khasmir's github stats"/>
+</p>
 
 </p>
 
