@@ -108,7 +108,9 @@ My Projects ✨:
 <details>
   <summary>Project Details</summary>
     <br/>
-    ## Table of Contents
+    
+## Table of Contents
+    
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -134,15 +136,14 @@ My Projects ✨:
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://khasmir.cusina.codes/)
+[![Product Name Screen Shot][product-screenshot]](https://khasmir04.github.io/Valorant-Memory-Game/public/index.html)
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [Flickity](https://flickity.metafizzy.co/)
-- [AOS](https://michalsnik.github.io/aos/)
-- [Mapbox](https://www.mapbox.com/)
+- [Fontawesome](https://fontawesome.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 <!-- GETTING STARTED -->
 
@@ -164,13 +165,13 @@ Use updated browsers when visiting the site:
 ### Installation
 
 You can browse the website using the following link:
-https://khasmir04.github.io/
+https://khasmir04.github.io/Valorant-Memory-Game/public/index.html
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-This website can be used for most landing pages with the same design.
+This game is for educational purposes only. Visit the site to play the game.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -178,7 +179,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-See the [open issues](https://khasmir04.github.io/) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/khasmir04/Valorant-Memory-Game/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -187,9 +188,9 @@ See the [open issues](https://khasmir04.github.io/) for a list of proposed featu
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
+3. Commit your Changes (`git commit -m 'Add some YourFeature'`)
+4. Push to the Branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
 <!-- LICENSE -->
@@ -204,19 +205,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Khasmir Jhon Caluscusao - [@khasmircortez](https://twitter.com/khasmircortez) - kcaluscusao@gmail.com
 
-Project Link: [https://github.com/khasmir04/Cusina](https://github.com/khasmir04/Cusina)
+Project Link: [https://khasmir04.github.io/Valorant-Memory-Game/public/index.html)
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
-- [Flickity](https://flickity.metafizzy.co/)
-- [AOS](https://michalsnik.github.io/aos/)
-- [Mapbox](https://www.mapbox.com/)
-- [Font Awesome](https://fontawesome.com)
-- [Pexels](https://www.pexels.com/)
-- [icons8](https://icons8.com/)
-- [Unsplash](https://unsplash.com)
+- [Vgraphs](https://vgraphs.com/)
+- [Fontawesome](https://fontawesome.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
